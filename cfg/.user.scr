@@ -1,0 +1,15 @@
+// this is for some stuff i'll implement later on
+"goreOff"
+	{
+		"#game_goreOff"
+		"#Tooltip_goreOff"
+		{ BOOL }
+		{ "1" }
+	}
+	"commsDisable"
+	{
+		"#game_takesshots"
+		"#Tooltip_takesshots"
+		{ BOOL }
+		{ "1" }
+	}

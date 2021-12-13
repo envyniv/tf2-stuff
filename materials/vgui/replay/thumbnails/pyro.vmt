@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/replay/thumbnails/pyro"
+	"$nolod" 1
+	"$translucent" 1
+}
