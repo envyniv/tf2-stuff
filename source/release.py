@@ -5,6 +5,8 @@
 #http://tclap.sourceforge.net/ #todo add installing dep
 #graphicsmagick #todo add installing dep
 
+
+## OLD BASH SCRIPT
 # if ![test -f /usr/lib/pkgconfig/VTFLib13.pc]; then #https://github.com/panzi/VTFLib
 #   git clone https://github.com/panzi/VTFLib.git
 #   mkdir VTFLib/build
@@ -35,3 +37,6 @@
 #   echo '"UnlitGeneric"{"$basetexture" "vgui/replay/thumbnails/'${basename $f .png}'" "$nolod" 1 "$translucent" 1}' >"../materials/vgui/replay/thumbnails/${basename $f .png}.vmt" #create vmt file
 #   vtfconv -f DXT1 icons/scaled/${f##/*} "../materials/vgui/replay/thumbnails/${basename $f .png}.vtf" #convert png to vtf with vtfconv
 # done
+
+
+## NEW PYTHON SCRIPT

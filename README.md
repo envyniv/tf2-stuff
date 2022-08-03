@@ -54,3 +54,14 @@ search (Usually CTRL+F) for "HudCrosshair" (without quotes) and strip the file o
 [Hands B-Gone!](https://gamebanana.com/mods/205744) (No Swaymotion version)
 
 [The Ultimate TF2 Visual Fix Pack](https://github.com/agrastiOs/Ultimate-TF2-Visual-Fix-Pack) (will only work on sv_pure 0)
+
+## TODO:
+- [ ] Remake all weapon icons in a consistent style, and in svg format
+- [ ] source/release.py
+- [ ] add more hitsounds
+- [ ] convert Adv. Settings to mastercomfig module commands
+- [ ] automatic installation script (will download mastercomfig and this, and then execute release.py)
+
+## Additional thanks
+- Decimation(https://gamebanana.com/members/1449640) for their Adv. Settings Menu
+- mastercoms(https://github.com/mastercoms) for mastercomfig
