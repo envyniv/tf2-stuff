@@ -606,221 +606,21 @@ DESCRIPTION INFO_OPTIONS
 		{ CATEGORY }
 	}
 	
-	"cl_jiggle_bone_framerate_cutoff"
-	{
-		"Jigglebone framerate cutoff"
-		"Skip jiggle bone simulation if framerate drops below this value (frames/second)"
-		{ NUMBER 0 300 }
-		{ "300" }
-	}
-	
-	"mat_phong"
-	{
-		"#DECI_phong"
-		"#Tooltip_phong"
-		{ BOOL }
-		{ "1" }
-	}
-	
-	"r_rimlight"
-	{
-		"#DECI_rimlight"
-		"#Tooltip_rimlight"
-		{ BOOL }
-		{ "1" }
-	}
-	
-	"mat_disable_lightwarp"
-	{
-		"#DECI_lightwarp"
-		"#Tooltip_lightwarp"
-		{ BOOL }
-		{ "1" }
-	}
-	
-	"r_dynamic"
-	{
-		"Dynamic lighting"
-		"Enables / disables dynamic lighting effects. This must be enabled for certain gamemodes like Slender Fortress to work."
-		{ BOOL }
-		{ "1" }
-	}
-	
-	"r_3dsky"
-	{
-		"3D skyboxes"
-		"Enables / disables 3 dimensional skyboxes."
-		{ BOOL }
-		{ "1" }
-	}
-	
-	"r_drawtracers"
-	{
-		"Draw world bullet tracers"
-		"Enables / disables bullet tracers in world view. (Show bullet tracers firing from other players' weapons?)"
-		{ BOOL }
-		{ "1" }
-	}
-	
-	"r_drawtracers_firstperson"
-	{
-		"Draw firstperson bullet tracers"
-		"Enables / disables bullet tracers in firstperson view. (Show bullet tracers firing from your weapons?)"
-		{ BOOL }
-		{ "1" }
-	}
-	
-	"r_shadowrendertotexture"
-	{
-		"Non-blurry shadows"
-		"Disables non-blurred shadows. Can show shadows through walls and other textures."
-		{ BOOL }
-		{ "1" }
-	}
-	
-	"r_shadows"
-	{
-		"Shadows"
-		"Toggles shadows"
-		{ BOOL }
-		{ "1" }
-	}
-	
-	"r_shadowmaxrendered"
-	{
-		"Max number of shadows to render"
-		"Toggles shadows"
-		{ NUMBER 1 100 }
-		{ "32" }
-	}
-	
-	"r_shadowcolor"
-	{
-		"Shadow RGB"
-		"Color of shadows in RGB format"
-		{ NUMBER 0 255 }
-		{ "0 0 0" }
-	}
-	
-	"mat_monitorgamma"
-	{
-		"Monitor gamma"
-		"Gamma (basically brightness). Lower values results in brighter colors."
-		{ SLIDER 1.6 2.6 }
-		{ "2" }
-	}
-		
-	"tf_particles_disable_weather"
-	{
-		"#TF_DisableWeatherParticles"
-		"#Tooltip_DisableWeatherParticles"
-		{ BOOL }
-		{ "0" }
-	}	
-	
-	"cl_disablehtmlmotd"
-	{
-		"#Valve_DisableHTMLMOTD"
-		"#Tooltip_DisableHTMLMOTD"
-		{ BOOL }
-		{ "0" }
-	}	
-
-	"mp_decals"
-	{
-		"#Valve_Multiplayer_Decal_Limit"
-		"#Tooltip_Multiplayer_Decal_Limit"
-		{ NUMBER 0 4096 }
-		{ "200" }
-	}
-	
-	"r_decals"
-	{
-		"Decals (sprays and bullet decals)"
-		"Minimum 1 -- Maximum 4096"
-		{ NUMBER 1 4096 }
-		{ "2048" }
-	}
-	
-	// - 2
-	"  "
-	{
-		"#DECI_expressions"
-		"#Tooltip_expressions"
-		{
-			LIST
-			"..."		"d_null"
-			"High" 		"face_high"
-			"Medium" 	"face_med"
-			"Off" 		"face_off"
-		}
-		{ "0" }
-	}
-	
-	// - 3
-	"tf_playergib"
-	{
-		"Gibbing mode"
-		"Type of gibbing"
-		{ 
-			LIST
-			"Off" 		"0"
-			"Normal" 	"1"
-			"Always" 	"2"
-		}
-		{ "0" }
-	}
-	"   "
-	{
-		"#game_goreOff"
-		"#Tooltip_goreOff"
-		{ LIST
-		 "Enabled" "goreOn"
-		 "Disabled" "goreOff"
-		}
-		{ "0" }
-	}
-	"   "
-	{
-		"Physics props and player gibs"
-		"Enable/disable gibs on all physics props including players"
-		{
-			LIST
-			"..." 		"d_null"
-			"On" 		"gib_on"
-			"Off" 		"gib_off"
-		}
-		{ "0" }
-	}
-	
-	// - 4
-	"    "
-	{
-		"Ragdolls"
-		"Enable/disable the rendering of ragdolls"
-		{
-			LIST
-			"..." 		"d_null"
-			"On" 		"ragdoll_on"
-			"Off" 		"ragdoll_off"
-		}
-		{ "0" }
-	}
-	
 	// - 5
-	"     "
+	""
 	{
-		"[!] Configs"
-		"Choose a performance config of your liking. WARNING - THIS MAY OVERWRITE SOME OF YOUR CURRENT SETTINGS!"
+		"[!] Preset"
+		"Choose a performance config of your liking. WARNING - Might override some settings!"
 		{
 			LIST
-			"..." 				"d_null"
-			"DX9 frames" 		"conf_dx9"
-			"High quality" 		"conf_highq"
-			"High frames"		"conf_highf"
-			"Max frames"		"conf_maxf"
-			"Max quality"		"conf_maxq"
-			"Rhapsody"			"conf_r"
+			"Skip Graphics Settings" 				"preset=none"
+			"Very Low" 		"preset=very-low"
+			"Low" 		"preset=low"
+			"Medium Low"		"preset=medium-low"
+			"Medium"		"preset=medium"
+			"Medium High"		"preset=medium-high"
+			"High"			"preset=high"
+			"Ultra"			"preset=ultra"
 		}
 		{ "0" }
 	}
@@ -868,6 +668,13 @@ DESCRIPTION INFO_OPTIONS
 		"#Tooltip_DisableSprays"
 		{ BOOL }
 		{ "0" }
+	}
+
+	"hud_saytext_time" {
+		"Chat"
+		"Enable / Disable Text Chat."
+		{BOOL}
+		{"12"}
 	}
 	
 //----------------------------------------------------------------------------
@@ -1238,7 +1045,7 @@ DESCRIPTION INFO_OPTIONS
 	
 	"voice_loopback"
 	{
-		"Voice loopback"
+		"Voice Loopback"
 		"When enabled, when you speak on the microphone, your voice will be played back to you."
 		{ BOOL }
 		{ "1" }
@@ -1246,14 +1053,14 @@ DESCRIPTION INFO_OPTIONS
 	
 	"voice_scale"
 	{
-		"Microphone volume (of other players)"
+		"Voice Chat Playback Volume"
 		{ SLIDER 0.0 1 }
 		{ "1" }
 	}
 	
 	"voice_enable"
 	{
-		"Voice (microphone)"
+		"Voice Chat Playback"
 		"Disable this to turn off playback of other player's microphones. Useful for stopping micspam."
 		{ BOOL }
 		{ "1" }
